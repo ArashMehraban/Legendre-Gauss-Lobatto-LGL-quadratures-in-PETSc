@@ -1,8 +1,8 @@
 ### Legendre-Gauss-Lobatto (LGL) quadratures in PETSc
-This code provides the Legendre-Gauss-Lobatto (LGL) quadratures in PETSc in 1D. This is the PETSc verion of libCEED.
+This code provides the Legendre-Gauss-Lobatto (LGL) quadratures in PETSc in 1D. This is the PETSc version of LGL found in libCEED [libCEED](https://github.com/CEED/libCEED).
 
 ### How to compile:
-1) set ``PETSC_DIR`` and ``PETSC_ARCH``\
+1) set ``PETSC_DIR`` and ``PETSC_ARCH``
 2) make all
 
 ### How to run:
@@ -36,4 +36,4 @@ FE Space:
 ``fe->qref1d``    : Quadrature Points\
 ``fe->qweight1d`` : Quadrature Weights\
 ``fe->B1d``       : Evaluation of Shape (Basis) functions at Quadrature Points\
-``fe->D1d``       : Evaluation of Derivative of Shape (Basis) functions at Quadrature Points\ 
+``fe->D1d``       : Evaluation of Derivative of Shape (Basis) functions at Quadrature Points
