@@ -34,7 +34,7 @@ FE Space:
 ```
 
 ``fe->P``         : ``degree + 1``\
-``fe->P``         : Number of Qaudrature Points\
+``fe->Q``         : Number of Qaudrature Points\
 ``fe->qref1d``    : Quadrature Points\
 ``fe->qweight1d`` : Quadrature Weights\
 ``fe->B1d``       : Evaluation of Shape (Basis) functions at Quadrature Points\
