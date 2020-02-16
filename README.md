@@ -1,14 +1,15 @@
+### Legendre-Gauss-Lobatto (LGL) quadratures in PETSc
 This code provides the Legendre-Gauss-Lobatto (LGL) quadratures in PETSc in 1D. This is the PETSc verion of libCEED.
 
 ### How to compile:
-set ``PETSC_DIR`` and ``PETSC_ARCH``\
-make all
+1) set ``PETSC_DIR`` and ``PETSC_ARCH``\
+2) make all
 
 ### How to run:
-./main -degree [n] \
+./main -degree [n]
 
 Example:\
-``./main -degree 4`` \
+``./main -degree 4``
 
 ``degree`` corresponds to the desired polynomial degree
 
@@ -31,3 +32,8 @@ FE Space:
   fe->B1d: [ 1. -0. 0. -0. 0. 1. -0. 0. -0. 0. 1. -0. 0. -0. 0. 1. ]
   fe->D1d: [ -3. 4.04508 -1.54508 0.5 -0.809017 -1.53429e-16 1.11803 -0.309017 0.309017 -1.11803 0. 0.809017 -0.5 1.54508 -4.04508 3. ]
 ```
+
+``fe->qref1d``    : Quadrature Points\
+``fe->qweight1d`` : Quadrature Weights\
+``fe->B1d``       : Evaluation of Shape (Basis) functions at Quadrature Points\
+``fe->D1d``       : Evaluation of Derivative of Shape (Basis) functions at Quadrature Points\ 
